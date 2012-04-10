@@ -23,7 +23,7 @@ LoadModule = lastseen
         Ident      = $ZNC_USER
         RealName   = $ZNC_USER
         Buffer     = 200
-        KeepBuffer = false
+        KeepBuffer = true
         ChanModes  = +stn
 	MaxJoins   = 1
 
@@ -36,9 +36,6 @@ LoadModule = lastseen
         LoadModule = simple_away
 
         Server     = irc.freenode.net 6667
-
-        <Chan #dotcloud>
-        </Chan>
 </User>
 EOF
 exec znc -f
